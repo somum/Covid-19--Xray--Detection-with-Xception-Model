@@ -1,0 +1,6 @@
+python inference.py result/model_fine_ep2_valloss0.035.h5 classes.txt images/c.jpg
+
+python XceptionModel.py image_dataset/ classes.txt result/
+
+if you want to give learning rate
+python XceptionModel.py image_dataset/ classes.txt result/ --epochs_pre 2 --epochs_fine 10 --lr_pre 5e-3 --lr_fine 5e-4
